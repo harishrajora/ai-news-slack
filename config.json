@@ -1,0 +1,25 @@
+{
+  "max_posts_per_run": 2,
+  "max_item_age_days": 3,
+  "feeds": [
+    {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "max_silence_days": 7},
+    {"name": "OpenAI Codex", "url": "https://developers.openai.com/codex/changelog/rss.xml", "max_silence_days": 14},
+    {"name": "Anthropic", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml", "max_silence_days": 10},
+    {"name": "Claude Blog", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml", "max_silence_days": 10},
+    {"name": "Claude Platform", "url": "https://platform.claude.com/docs/en/release-notes/feed.xml", "max_silence_days": 14},
+    {"name": "Claude Code", "url": "https://github.com/anthropics/claude-code/releases.atom", "max_silence_days": 10},
+    {"name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "max_silence_days": 14},
+    {"name": "Google AI", "url": "https://blog.google/technology/ai/rss/", "max_silence_days": 14},
+    {"name": "Gemini", "url": "https://blog.google/products/gemini/rss/", "max_silence_days": 10},
+    {"name": "Microsoft AI", "url": "https://news.microsoft.com/source/topics/ai/feed/", "max_silence_days": 30},
+    {"name": "Mistral AI", "url": "https://mistral.ai/news/rss", "max_silence_days": 30},
+    {"name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "max_silence_days": 10},
+    {"name": "Perplexity", "url": "https://docs.perplexity.ai/docs/resources/changelog/rss.xml", "max_silence_days": 14},
+    {"name": "Cohere", "url": "https://docs.cohere.com/changelog.rss", "max_silence_days": 45},
+    {"name": "Cohere Blog", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cohere.xml", "max_silence_days": 14}
+  ],
+  "hacker_news": {
+    "min_points": 300,
+    "keywords": ["OpenAI", "Anthropic", "Claude", "Gemini", "DeepMind", "GPT", "LLM", "LLMs", "Llama", "Mistral", "xAI", "Grok", "Hugging Face", "Nvidia", "Perplexity", "Cohere"]
+  }
+}

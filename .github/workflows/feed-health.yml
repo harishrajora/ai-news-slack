@@ -1,0 +1,17 @@
+name: Feed health check
+
+on:
+  schedule:
+    - cron: "30 3 * * *"     # daily, 03:30 UTC (09:00 IST)
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # Fails (and GitHub emails you) if any feed is broken or has gone quiet too long.
+      - name: Check every feed
+        run: python3 news.py --health
