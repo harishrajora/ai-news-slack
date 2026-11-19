@@ -2,7 +2,7 @@ name: Post AI news to Slack
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
+    - cron: "7,37 * * * *"   # every 30 minutes, off the busy :00/:30 marks GitHub often delays
   workflow_dispatch:          # "Run workflow" button for manual runs
 
 permissions:
