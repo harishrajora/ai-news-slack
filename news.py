@@ -10,6 +10,7 @@ Environment:
 """
 
 import difflib
+import html
 import json
 import os
 import re
@@ -28,6 +29,8 @@ STATE_FILE = ROOT / "state.json"
 USER_AGENT = "Mozilla/5.0 (compatible; ai-news-feed/1.0)"
 NOW = datetime.now(timezone.utc)
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
+SUMMARY_MAX = 280
+NO_SUMMARY = "Open the link for details."
 
 
 def fetch(url):
@@ -60,8 +63,33 @@ def parse_date(text):
     return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
 
 
+def clean_text(fragment):
+    fragment = re.sub(r"</h[1-6]>", ": ", fragment, flags=re.I)  # "Heading: text", not "Heading text"
+    text = html.unescape(re.sub(r"<[^>]+>", " ", fragment))
+    text = re.sub(r"\s+:", ":", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def make_summary(el, title):
+    """Short summary from the feed's own description, or "" if it adds nothing."""
+    raw = child_text(el, "description", "summary") or child_text(el, "content", "encoded")
+    bullets = [clean_text(li) for li in re.findall(r"<li[^>]*>(.*?)</li>", raw, re.S | re.I)]
+    bullets = [b for b in bullets if b]
+    if len(bullets) >= 2:  # release notes: keep the first few changes
+        text = " • ".join(bullets[:3]) + (" • …" if len(bullets) > 3 else "")
+    else:
+        text = clean_text(raw)
+    text = re.sub(r"\s*The post .* appeared first on .*$", "", text)  # WordPress boilerplate
+    if len(text) > SUMMARY_MAX:
+        text = text[:SUMMARY_MAX].rsplit(" ", 1)[0].rstrip(",;:.") + "…"
+    t, s = norm_title(title), norm_title(text)
+    if len(text) < 40 or not s or s in t or t in s:
+        return ""  # too short, or just repeats the title
+    return text
+
+
 def parse_feed(data):
-    """Return a list of {id, title, url, date} from RSS or Atom bytes."""
+    """Return a list of {id, title, url, date, summary} from RSS or Atom bytes."""
     root = ET.fromstring(data)
     items = []
     for el in root.iter():
@@ -77,7 +105,8 @@ def parse_feed(data):
         date = parse_date(child_text(el, "pubdate", "published", "updated", "date"))
         item_id = child_text(el, "guid", "id") or link or title
         if title and link:
-            items.append({"id": item_id, "title": title, "url": link, "date": date})
+            items.append({"id": item_id, "title": title, "url": link, "date": date,
+                          "summary": make_summary(el, title)})
     return items
 
 
@@ -96,11 +125,14 @@ def hacker_news_items():
         title = h.get("title") or ""
         if not pattern.search(title):
             continue
+        discussion = f"https://news.ycombinator.com/item?id={h['objectID']}"
         items.append({
             "id": h["objectID"],
             "title": title,
-            "url": h.get("url") or f"https://news.ycombinator.com/item?id={h['objectID']}",
+            "url": h.get("url") or discussion,
             "date": datetime.fromtimestamp(h["created_at_i"], timezone.utc),
+            "summary": f"{h['points']} points and {h.get('num_comments') or 0} comments on Hacker News. "
+                       f"Discussion: {discussion}",
         })
     return items
 
@@ -136,7 +168,12 @@ def is_duplicate(item, recent):
 
 
 def post(source, item):
-    body = json.dumps({"source": source, "title": item["title"], "url": item["url"]}).encode()
+    body = json.dumps({
+        "source": source,
+        "title": item["title"],
+        "url": item["url"],
+        "summary": item["summary"] or NO_SUMMARY,  # Slack workflow variables can't be empty
+    }).encode()
     req = urllib.request.Request(
         os.environ["SLACK_WEBHOOK_URL"], data=body,
         headers={"Content-Type": "application/json", "User-Agent": USER_AGENT},
@@ -178,7 +215,7 @@ def run():
         if is_duplicate(item, state["recent"]):
             print(f"dup  {name}: {item['title']}")
         else:
-            print(f"post {name}: {item['title']} {item['url']}")
+            print(f"post {name}: {item['title']} {item['url']}\n     {item['summary'] or NO_SUMMARY}")
             if not DRY_RUN:
                 try:
                     post(name, item)
