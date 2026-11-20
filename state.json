@@ -1,5 +1,7 @@
 {
  "last_post": {
+  "Claude Code": 1795158243.322191,
+  "Google AI": 1795158243.322191,
   "OpenAI": 1795155928.659746,
   "OpenAI Codex": 1795155928.659746
  },
@@ -43,6 +45,16 @@
    "title": "codex cli release 01710",
    "ts": 1795155928.659746,
    "url": "developers.openai.com/codex/changelog#github-release-452122665"
+  },
+  {
+   "title": "v21329",
+   "ts": 1795158243.322191,
+   "url": "github.com/anthropics/claude-code/releases/tag/v2.1.329"
+  },
+  {
+   "title": "walter isaacson on curiosity and creativity in the ai age",
+   "ts": 1795158243.322191,
+   "url": "blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson"
   }
  ],
  "seen": {
@@ -664,6 +676,7 @@
    "https://claude.com/blog/claude-2-amazon-bedrock"
   ],
   "Claude Code": [
+   "tag:github.com,2008:Repository/937253475/v2.1.329",
    "tag:github.com,2008:Repository/937253475/v2.1.328",
    "tag:github.com,2008:Repository/937253475/v2.1.327",
    "tag:github.com,2008:Repository/937253475/v2.1.326",
@@ -1366,6 +1379,7 @@
    "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/"
   ],
   "Google AI": [
+   "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
    "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
    "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
