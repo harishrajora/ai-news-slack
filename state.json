@@ -1,9 +1,11 @@
 {
  "last_post": {
+  "Anthropic": 1795193684.459792,
   "Claude Code": 1795158243.322191,
   "Gemini": 1795169231.339315,
   "Google AI": 1795169231.339315,
   "Hacker News": 1795180456.227321,
+  "Hugging Face": 1795193684.459792,
   "OpenAI": 1795180456.227321,
   "OpenAI Codex": 1795155928.659746,
   "Perplexity": 1795159035.383433
@@ -98,10 +100,21 @@
    "title": "anthropics nasdaq debut",
    "ts": 1795180456.227321,
    "url": "reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19"
+  },
+  {
+   "title": "anthropic announces closing of initial public offering including full exercise of underwriters option to purchase additional shares and closing of concurrent private placement",
+   "ts": 1795193684.459792,
+   "url": "anthropic.com/news/ipo-close"
+  },
+  {
+   "title": "introducing harness adapters adapt your favorite model to your harness to improve performance and cost",
+   "ts": 1795193684.459792,
+   "url": "huggingface.co/blog/harness-adapters-at-scale"
   }
  ],
  "seen": {
   "Anthropic": [
+   "https://www.anthropic.com/news/ipo-close",
    "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
    "https://www.anthropic.com/news/roadshow-launch",
    "https://www.anthropic.com/claude-fable-and-mythos-5-2",
@@ -1556,6 +1569,7 @@
    "50534631"
   ],
   "Hugging Face": [
+   "https://huggingface.co/blog/harness-adapters-at-scale",
    "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
    "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
    "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
@@ -4202,14 +4216,13 @@
    "97b83aa9baec9a9e",
    "263862235a403619",
    "c064c1d18833ca7e",
-   "c11b8f2151850745",
    "939c787ba8f0ce29",
    "60b7692e1aacb29e",
    "22497b4dfa3dbe1b",
    "05a777bcd1d04bbe",
    "281e2d94d0964384",
-   "cb109ba2e0439fbe",
-   "c5210eebce2e9a38",
+   "b657ddb475f92614",
+   "3b0b993db55a9a87",
    "61f74c7d764cc1da",
    "6a5bb19707c41617",
    "4eaad45c4d5be0ad",
