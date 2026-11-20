@@ -152,7 +152,9 @@ def all_sources():
 
 def norm_url(url):
     p = urllib.parse.urlsplit(url)
-    return (p.netloc.lower().removeprefix("www.") + p.path.rstrip("/")).lower()
+    # Keep the #fragment: changelogs give every entry the same page with a different anchor.
+    key = p.netloc.lower().removeprefix("www.") + p.path.rstrip("/")
+    return (key + ("#" + p.fragment if p.fragment else "")).lower()
 
 
 def norm_title(title):
@@ -186,50 +188,57 @@ def run():
     state = json.loads(STATE_FILE.read_text()) if STATE_FILE.exists() else {"seen": {}, "recent": []}
     cutoff = NOW - timedelta(days=CONFIG["max_item_age_days"])
     state["recent"] = [r for r in state["recent"] if r["ts"] > (NOW - timedelta(days=7)).timestamp()]
-    pending = []
+    queues = {}  # source -> new items, oldest first
 
     for name, items, error in all_sources():
         if error:
             print(f"WARN {name}: {error}")
             continue
-        seen = state["seen"].get(name)
-        if seen is None:  # first time we see this feed: remember everything, post nothing
-            state["seen"][name] = [i["id"] for i in items][:500]
+        current = [i["id"] for i in items]
+        if name not in state["seen"]:  # first time we see this feed: remember everything, post nothing
+            state["seen"][name] = current
             print(f"seeded {name} with {len(items)} items")
             continue
-        seen_set = set(seen)
-        for i in items:
-            if i["id"] in seen_set:
-                continue
-            if i["date"] and i["date"] < cutoff:  # old item resurfacing; skip quietly
-                seen.insert(0, i["id"])
-                continue
-            pending.append((name, i))
+        seen_set = set(state["seen"][name])
+        new = [i for i in items if i["id"] not in seen_set
+               and not (i["date"] and i["date"] < cutoff)]  # old items resurfacing are skipped quietly
+        new.sort(key=lambda i: i["date"] or NOW)
+        if new:
+            queues[name] = new
+        # Remember every item in the feed except the ones still waiting to be posted.
+        waiting = {i["id"] for i in new}
+        state["seen"][name] = [x for x in current if x not in waiting]
 
-    pending.sort(key=lambda p: p[1]["date"] or NOW)
-    posted = 0
-    for name, item in pending:
-        if posted >= CONFIG["max_posts_per_run"]:
-            break  # leave the rest unseen; they go out next run
-        seen = state["seen"][name]
-        if is_duplicate(item, state["recent"]):
-            print(f"dup  {name}: {item['title']}")
-        else:
-            print(f"post {name}: {item['title']} {item['url']}\n     {item['summary'] or NO_SUMMARY}")
-            if not DRY_RUN:
-                try:
-                    post(name, item)
-                except Exception as e:  # stop, but still save what was already posted
-                    print(f"ERROR posting to Slack: {type(e).__name__}: {e}")
-                    break
-                time.sleep(2)
-            posted += 1
-            state["recent"].append({"url": norm_url(item["url"]),
-                                    "title": norm_title(item["title"]), "ts": NOW.timestamp()})
-        seen.insert(0, item["id"])
-        del seen[500:]
+    # Take turns between sources so one busy feed can't use up every slot:
+    # the source that posted least recently goes first.
+    last_post = state.setdefault("last_post", {})
+    posted, failed = 0, False
+    while queues and posted < CONFIG["max_posts_per_run"] and not failed:
+        for name in sorted(queues, key=lambda n: last_post.get(n, 0)):
+            if posted >= CONFIG["max_posts_per_run"]:
+                break
+            item = queues[name].pop(0)
+            if not queues[name]:
+                del queues[name]
+            if is_duplicate(item, state["recent"]):
+                print(f"dup  {name}: {item['title']}")
+            else:
+                print(f"post {name}: {item['title']} {item['url']}\n     {item['summary'] or NO_SUMMARY}")
+                if not DRY_RUN:
+                    try:
+                        post(name, item)
+                    except Exception as e:  # stop, but still save what was already posted
+                        print(f"ERROR posting to Slack: {type(e).__name__}: {e}")
+                        failed = True
+                        break
+                    time.sleep(2)
+                posted += 1
+                last_post[name] = NOW.timestamp()
+                state["recent"].append({"url": norm_url(item["url"]),
+                                        "title": norm_title(item["title"]), "ts": NOW.timestamp()})
+            state["seen"][name].insert(0, item["id"])
 
-    left = len(pending) - sum(1 for n, i in pending if i["id"] in state["seen"][n])
+    left = sum(len(q) for q in queues.values())
     print(f"posted {posted}, waiting for next run {left}")
     if not DRY_RUN:
         STATE_FILE.write_text(json.dumps(state, indent=1, sort_keys=True) + "\n")
