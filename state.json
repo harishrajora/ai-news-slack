@@ -1,8 +1,8 @@
 {
  "last_post": {
   "Claude Code": 1795158243.322191,
-  "Gemini": 1795159035.383433,
-  "Google AI": 1795158243.322191,
+  "Gemini": 1795169231.339315,
+  "Google AI": 1795169231.339315,
   "Hacker News": 1795160530.876322,
   "OpenAI": 1795160530.876322,
   "OpenAI Codex": 1795155928.659746,
@@ -78,6 +78,16 @@
    "title": "le groupe figaro and openai partner to bring le figaro journalism to chatgpt",
    "ts": 1795160530.876322,
    "url": "openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
+  },
+  {
+   "title": "introducing tool retrieval in the gemini api",
+   "ts": 1795169231.339315,
+   "url": "blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval"
+  },
+  {
+   "title": "icymi transfer your history from other ai apps into gemini",
+   "ts": 1795169231.339315,
+   "url": "blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history"
   }
  ],
  "seen": {
@@ -1382,6 +1392,7 @@
    "https://cohere.com/blog/the-cohere-platform-is-now-publicly-available-2"
   ],
   "Gemini": [
+   "https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/",
    "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
    "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
@@ -1403,6 +1414,7 @@
    "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/"
   ],
   "Google AI": [
+   "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
    "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
    "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
@@ -1526,8 +1538,8 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
-   "50553225",
    "50553843",
+   "50553225",
    "50552424",
    "50535230",
    "50534631"
@@ -2556,8 +2568,8 @@
    "https://mistral.ai/news/about-mistral-ai/"
   ],
   "OpenAI": [
-   "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
    "https://openai.com/index/advancing-chip-design-with-our-models",
+   "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
    "https://openai.com/index/introducing-gpt-6-2-astra-sol",
    "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
    "https://openai.com/index/introducing-chatgpt-for-sales",
