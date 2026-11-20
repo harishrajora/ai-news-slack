@@ -3,7 +3,8 @@
   "Claude Code": 1795158243.322191,
   "Gemini": 1795159035.383433,
   "Google AI": 1795158243.322191,
-  "OpenAI": 1795155928.659746,
+  "Hacker News": 1795160530.876322,
+  "OpenAI": 1795160530.876322,
   "OpenAI Codex": 1795155928.659746,
   "Perplexity": 1795159035.383433
  },
@@ -67,6 +68,16 @@
    "title": "november 2026",
    "ts": 1795159035.383433,
    "url": "docs.perplexity.ai/docs/resources/changelog#november-2026"
+  },
+  {
+   "title": "llm assisted reverse engineering",
+   "ts": 1795160530.876322,
+   "url": "slowchronicle.com/posts/llm-assisted-reverse-engineering"
+  },
+  {
+   "title": "le groupe figaro and openai partner to bring le figaro journalism to chatgpt",
+   "ts": 1795160530.876322,
+   "url": "openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
   }
  ],
  "seen": {
@@ -1515,6 +1526,7 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
+   "50553225",
    "50553843",
    "50552424",
    "50535230",
@@ -2544,6 +2556,7 @@
    "https://mistral.ai/news/about-mistral-ai/"
   ],
   "OpenAI": [
+   "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
    "https://openai.com/index/advancing-chip-design-with-our-models",
    "https://openai.com/index/introducing-gpt-6-2-astra-sol",
    "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
