@@ -1,9 +1,11 @@
 {
  "last_post": {
   "Claude Code": 1795158243.322191,
+  "Gemini": 1795159035.383433,
   "Google AI": 1795158243.322191,
   "OpenAI": 1795155928.659746,
-  "OpenAI Codex": 1795155928.659746
+  "OpenAI Codex": 1795155928.659746,
+  "Perplexity": 1795159035.383433
  },
  "recent": [
   {
@@ -55,6 +57,16 @@
    "title": "walter isaacson on curiosity and creativity in the ai age",
    "ts": 1795158243.322191,
    "url": "blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson"
+  },
+  {
+   "title": "let gemini tackle repetitive chores on your mac",
+   "ts": 1795159035.383433,
+   "url": "blog.google/innovation-and-ai/products/gemini-app/computer-use-mac"
+  },
+  {
+   "title": "november 2026",
+   "ts": 1795159035.383433,
+   "url": "docs.perplexity.ai/docs/resources/changelog#november-2026"
   }
  ],
  "seen": {
@@ -1359,6 +1371,7 @@
    "https://cohere.com/blog/the-cohere-platform-is-now-publicly-available-2"
   ],
   "Gemini": [
+   "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
    "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
@@ -4149,6 +4162,7 @@
    "https://developers.openai.com/codex/changelog/#codex-2025-05-19"
   ],
   "Perplexity": [
+   "97b83aa9baec9a9e",
    "263862235a403619",
    "c064c1d18833ca7e",
    "c11b8f2151850745",
