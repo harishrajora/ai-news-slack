@@ -4,9 +4,9 @@
   "Claude Code": 1795215735.260263,
   "Gemini": 1795215735.260263,
   "Google AI": 1795169231.339315,
-  "Hacker News": 1795233232.962559,
+  "Hacker News": 1795290236.579797,
   "Hugging Face": 1795264199.27824,
-  "OpenAI": 1795264199.27824,
+  "OpenAI": 1795290236.579797,
   "OpenAI Codex": 1795155928.659746,
   "Perplexity": 1795159035.383433
  },
@@ -140,6 +140,16 @@
    "title": "explore the codex security plugin",
    "ts": 1795264199.27824,
    "url": "openai.com/business/learn/codex-security-plugin-demo"
+  },
+  {
+   "title": "gemini 4 neon is the new 1 on the models engineering index",
+   "ts": 1795290236.579797,
+   "url": "git-aarvin.github.io/mei"
+  },
+  {
+   "title": "see pr scans in action",
+   "ts": 1795290236.579797,
+   "url": "openai.com/business/learn/pr-scans-demo"
   }
  ],
  "seen": {
@@ -1591,6 +1601,7 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
+   "50568130",
    "50563148",
    "50562754",
    "50553843",
@@ -2623,6 +2634,7 @@
    "https://mistral.ai/news/about-mistral-ai/"
   ],
   "OpenAI": [
+   "https://openai.com/business/learn/pr-scans-demo",
    "https://openai.com/business/learn/codex-security-plugin-demo",
    "https://openai.com/index/the-silent-consensus",
    "https://openai.com/business/customer-stories/sumitomo-life",
