@@ -4,9 +4,9 @@
   "Claude Code": 1795215735.260263,
   "Gemini": 1795215735.260263,
   "Google AI": 1795169231.339315,
-  "Hacker News": 1795290236.579797,
+  "Hacker News": 1795306562.273082,
   "Hugging Face": 1795264199.27824,
-  "OpenAI": 1795290236.579797,
+  "OpenAI": 1795306562.273082,
   "OpenAI Codex": 1795155928.659746,
   "Perplexity": 1795159035.383433
  },
@@ -150,6 +150,16 @@
    "title": "see pr scans in action",
    "ts": 1795290236.579797,
    "url": "openai.com/business/learn/pr-scans-demo"
+  },
+  {
+   "title": "nasdaq erases all 2026 gains as ai selloff dampens anthropics second day",
+   "ts": 1795306562.273082,
+   "url": "theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off"
+  },
+  {
+   "title": "hebbia sees improvements in financial research with gpt6 astra",
+   "ts": 1795306562.273082,
+   "url": "openai.com/business/customer-stories/hebbia"
   }
  ],
  "seen": {
@@ -786,6 +796,7 @@
   "Claude Platform": [
    "https://platform.claude.com/docs/en/release-notes/overview#linked-billing",
    "https://platform.claude.com/docs/en/release-notes/overview#text-watermark-claude-opus-4-6-and-4-5-models",
+   "https://platform.claude.com/docs/en/release-notes/overview#encryption-key-webhook-events",
    "https://platform.claude.com/docs/en/release-notes/overview#self-hosted-managed-agents",
    "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
    "https://platform.claude.com/docs/en/release-notes/overview#dreams-claude-fable-5-2",
@@ -1601,12 +1612,10 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
+   "50574383",
    "50568130",
    "50563148",
-   "50562754",
-   "50553843",
-   "50553225",
-   "50552424"
+   "50562754"
   ],
   "Hugging Face": [
    "https://huggingface.co/blog/inkling2mini",
@@ -2634,8 +2643,12 @@
    "https://mistral.ai/news/about-mistral-ai/"
   ],
   "OpenAI": [
-   "https://openai.com/business/learn/pr-scans-demo",
+   "https://openai.com/business/customer-stories/hebbia",
+   "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
    "https://openai.com/business/learn/codex-security-plugin-demo",
+   "https://openai.com/business/learn/pr-scans-demo",
+   "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+   "https://openai.com/business/learn/deploying-daybreak-red",
    "https://openai.com/index/the-silent-consensus",
    "https://openai.com/business/customer-stories/sumitomo-life",
    "https://openai.com/index/research-acceleration-jagged-frontier",
@@ -4153,27 +4166,16 @@
    "https://developers.openai.com/codex/changelog/#codex-2026-08-03-mobile",
    "https://developers.openai.com/codex/changelog/#github-release-366471016",
    "https://developers.openai.com/codex/changelog/#codex-2026-08-06-app",
-   "https://developers.openai.com/codex/changelog/#github-release-365644216",
    "https://developers.openai.com/codex/changelog/#codex-2026-08-04-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-31",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-31-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-30-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-29",
-   "https://developers.openai.com/codex/changelog/#github-release-361463950",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-27-mobile",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-23-app",
-   "https://developers.openai.com/codex/changelog/#github-release-357545274",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-20-mobile",
-   "https://developers.openai.com/codex/changelog/#github-release-356112050",
-   "https://developers.openai.com/codex/changelog/#github-release-354839089",
-   "https://developers.openai.com/codex/changelog/#github-release-353578290",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-13-mobile",
-   "https://developers.openai.com/codex/changelog/#github-release-352954174",
-   "https://developers.openai.com/codex/changelog/#github-release-352930553",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-09-app",
-   "https://developers.openai.com/codex/changelog/#github-release-351819708",
-   "https://developers.openai.com/codex/changelog/#github-release-351657410",
-   "https://developers.openai.com/codex/changelog/#github-release-350650561",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-06-mobile",
    "https://developers.openai.com/codex/changelog/#codex-2026-06-25",
    "https://developers.openai.com/codex/changelog/#codex-2026-06-22-mobile",
