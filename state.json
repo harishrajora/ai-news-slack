@@ -4,9 +4,9 @@
   "Claude Code": 1795215735.260263,
   "Gemini": 1795215735.260263,
   "Google AI": 1795169231.339315,
-  "Hacker News": 1795332128.290934,
+  "Hacker News": 1795361806.395979,
   "Hugging Face": 1795264199.27824,
-  "OpenAI": 1795332128.290934,
+  "OpenAI": 1795361806.395979,
   "OpenAI Codex": 1795155928.659746,
   "Perplexity": 1795159035.383433
  },
@@ -170,6 +170,16 @@
    "title": "us secs nvidia probe is examining potential accounting issues  sources",
    "ts": 1795332128.290934,
    "url": "marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627"
+  },
+  {
+   "title": "combatting adversarial distillation",
+   "ts": 1795361806.395979,
+   "url": "openai.com/index/combatting-adversarial-distillation"
+  },
+  {
+   "title": "87 of the anthropic power will come from gas and 11 from coal in 2028",
+   "ts": 1795361806.395979,
+   "url": "betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power"
   }
  ],
  "seen": {
@@ -1622,6 +1632,7 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
+   "50597612",
    "50581438",
    "50574383",
    "50568130",
@@ -2654,8 +2665,9 @@
    "https://mistral.ai/news/about-mistral-ai/"
   ],
   "OpenAI": [
-   "https://openai.com/index/introducing-medchembench",
+   "https://openai.com/index/combatting-adversarial-distillation",
    "https://openai.com/business/customer-stories/hebbia",
+   "https://openai.com/index/introducing-medchembench",
    "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
    "https://openai.com/business/learn/codex-security-plugin-demo",
    "https://openai.com/business/learn/pr-scans-demo",
