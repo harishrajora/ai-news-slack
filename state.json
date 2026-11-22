@@ -4,9 +4,9 @@
   "Claude Code": 1795215735.260263,
   "Gemini": 1795215735.260263,
   "Google AI": 1795169231.339315,
-  "Hacker News": 1795306562.273082,
+  "Hacker News": 1795332128.290934,
   "Hugging Face": 1795264199.27824,
-  "OpenAI": 1795306562.273082,
+  "OpenAI": 1795332128.290934,
   "OpenAI Codex": 1795155928.659746,
   "Perplexity": 1795159035.383433
  },
@@ -160,6 +160,16 @@
    "title": "hebbia sees improvements in financial research with gpt6 astra",
    "ts": 1795306562.273082,
    "url": "openai.com/business/customer-stories/hebbia"
+  },
+  {
+   "title": "can ai help scientists identify promising drug candidates",
+   "ts": 1795332128.290934,
+   "url": "openai.com/index/introducing-medchembench"
+  },
+  {
+   "title": "us secs nvidia probe is examining potential accounting issues  sources",
+   "ts": 1795332128.290934,
+   "url": "marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627"
   }
  ],
  "seen": {
@@ -1612,6 +1622,7 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
+   "50581438",
    "50574383",
    "50568130",
    "50563148",
@@ -2643,6 +2654,7 @@
    "https://mistral.ai/news/about-mistral-ai/"
   ],
   "OpenAI": [
+   "https://openai.com/index/introducing-medchembench",
    "https://openai.com/business/customer-stories/hebbia",
    "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
    "https://openai.com/business/learn/codex-security-plugin-demo",
@@ -4166,16 +4178,27 @@
    "https://developers.openai.com/codex/changelog/#codex-2026-08-03-mobile",
    "https://developers.openai.com/codex/changelog/#github-release-366471016",
    "https://developers.openai.com/codex/changelog/#codex-2026-08-06-app",
+   "https://developers.openai.com/codex/changelog/#github-release-365644216",
    "https://developers.openai.com/codex/changelog/#codex-2026-08-04-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-31",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-31-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-30-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-29",
+   "https://developers.openai.com/codex/changelog/#github-release-361463950",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-27-mobile",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-23-app",
+   "https://developers.openai.com/codex/changelog/#github-release-357545274",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-20-mobile",
+   "https://developers.openai.com/codex/changelog/#github-release-356112050",
+   "https://developers.openai.com/codex/changelog/#github-release-354839089",
+   "https://developers.openai.com/codex/changelog/#github-release-353578290",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-13-mobile",
+   "https://developers.openai.com/codex/changelog/#github-release-352954174",
+   "https://developers.openai.com/codex/changelog/#github-release-352930553",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-09-app",
+   "https://developers.openai.com/codex/changelog/#github-release-351819708",
+   "https://developers.openai.com/codex/changelog/#github-release-351657410",
+   "https://developers.openai.com/codex/changelog/#github-release-350650561",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-06-mobile",
    "https://developers.openai.com/codex/changelog/#codex-2026-06-25",
    "https://developers.openai.com/codex/changelog/#codex-2026-06-22-mobile",
