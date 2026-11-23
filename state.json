@@ -4,7 +4,7 @@
   "Claude Code": 1795215735.260263,
   "Gemini": 1795215735.260263,
   "Google AI": 1795169231.339315,
-  "Hacker News": 1795361806.395979,
+  "Hacker News": 1795430346.794792,
   "Hugging Face": 1795264199.27824,
   "OpenAI": 1795382080.679504,
   "OpenAI Codex": 1795155928.659746,
@@ -185,6 +185,11 @@
    "title": "perplexity and intelligence",
    "ts": 1795382080.679504,
    "url": "openai.com/index/perplexity-and-intelligence"
+  },
+  {
+   "title": "show hn i built a game where you are an llms subagent",
+   "ts": 1795430346.794792,
+   "url": "github.com/gulivan/worker755"
   }
  ],
  "seen": {
@@ -1637,6 +1642,7 @@
    "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/"
   ],
   "Hacker News": [
+   "50599762",
    "50601525",
    "50597612",
    "50581438",
