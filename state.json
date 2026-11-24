@@ -4,8 +4,10 @@
   "Claude Blog": 1795473235.608298,
   "Claude Code": 1795215735.260263,
   "Claude Platform": 1795473235.608298,
+  "Cohere Blog": 1795501253.408728,
   "Gemini": 1795215735.260263,
   "Google AI": 1795169231.339315,
+  "Google DeepMind": 1795501253.408728,
   "Hacker News": 1795430346.794792,
   "Hugging Face": 1795264199.27824,
   "OpenAI": 1795382080.679504,
@@ -202,6 +204,16 @@
    "title": "claude platform release notes  november 23 2026",
    "ts": 1795473235.608298,
    "url": "platform.claude.com/docs/en/release-notes/overview#claude-opus-4-5-deprecation"
+  },
+  {
+   "title": "finding faster quantum algorithms with agents and formal verification",
+   "ts": 1795501253.408728,
+   "url": "deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification"
+  },
+  {
+   "title": "ai readiness assessment is your enterprise prepared",
+   "ts": 1795501253.408728,
+   "url": "cohere.com/blog/ai-readiness-assessment"
   }
  ],
  "seen": {
@@ -1083,6 +1095,7 @@
    "https://docs.cohere.com/changelog/larger-representation-models"
   ],
   "Cohere Blog": [
+   "https://cohere.com/blog/ai-readiness-assessment",
    "https://cohere.com/blog/crunchbase-in-north",
    "https://cohere.com/blog/video-intelligence-preview",
    "https://cohere.com/blog/cohere-expands-its-sovereign-ai-platform-with-aisle-and-cubic",
@@ -1550,6 +1563,7 @@
    "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/"
   ],
   "Google DeepMind": [
+   "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
    "https://deepmind.google/blog/introducing-gemini-4-neon/",
    "https://deepmind.google/blog/genie-4-is-now-available/",
    "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
