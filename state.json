@@ -6,12 +6,12 @@
   "Claude Platform": 1795473235.608298,
   "Cohere Blog": 1795501253.408728,
   "Gemini": 1795215735.260263,
-  "Google AI": 1795169231.339315,
+  "Google AI": 1795543970.474686,
   "Google DeepMind": 1795501253.408728,
   "Hacker News": 1795430346.794792,
   "Hugging Face": 1795264199.27824,
   "OpenAI": 1795382080.679504,
-  "OpenAI Codex": 1795155928.659746,
+  "OpenAI Codex": 1795543970.474686,
   "Perplexity": 1795159035.383433
  },
  "recent": [
@@ -214,6 +214,16 @@
    "title": "ai readiness assessment is your enterprise prepared",
    "ts": 1795501253.408728,
    "url": "cohere.com/blog/ai-readiness-assessment"
+  },
+  {
+   "title": "codex app",
+   "ts": 1795543970.474686,
+   "url": "developers.openai.com/codex/changelog#codex-2026-11-23-app"
+  },
+  {
+   "title": "a more tailored google search thats uniquely yours",
+   "ts": 1795543970.474686,
+   "url": "blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps"
   }
  ],
  "seen": {
@@ -1537,11 +1547,10 @@
    "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
    "https://blog.google/innovation-and-ai/products/gemini-app/research-with-gemini-in-chrome/",
-   "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
-   "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
-   "https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/"
+   "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/"
   ],
   "Google AI": [
+   "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
    "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
    "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
@@ -1559,8 +1568,7 @@
    "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
    "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-   "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-   "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/"
+   "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
   ],
   "Google DeepMind": [
    "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
@@ -1678,7 +1686,6 @@
    "https://huggingface.co/blog/moe-expert-streaming",
    "https://huggingface.co/blog/rumble-2-flash",
    "https://huggingface.co/blog/openrouter",
-   "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
    "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
    "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
    "https://huggingface.co/blog/3d-lora-finetuning",
@@ -4118,7 +4125,9 @@
    "https://openai.com/index/introducing-openai"
   ],
   "OpenAI Codex": [
+   "https://developers.openai.com/codex/changelog/#codex-2026-11-23-app",
    "https://developers.openai.com/codex/changelog/#github-release-452122665",
+   "https://developers.openai.com/codex/changelog/#codex-2026-11-19-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-11-18-mobile",
    "https://developers.openai.com/codex/changelog/#github-release-449494076",
    "https://developers.openai.com/codex/changelog/#codex-gpt-62-astra",
@@ -4226,21 +4235,11 @@
    "https://developers.openai.com/codex/changelog/#codex-2026-07-31-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-30-app",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-29",
-   "https://developers.openai.com/codex/changelog/#github-release-361463950",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-27-mobile",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-23-app",
-   "https://developers.openai.com/codex/changelog/#github-release-357545274",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-20-mobile",
-   "https://developers.openai.com/codex/changelog/#github-release-356112050",
-   "https://developers.openai.com/codex/changelog/#github-release-354839089",
-   "https://developers.openai.com/codex/changelog/#github-release-353578290",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-13-mobile",
-   "https://developers.openai.com/codex/changelog/#github-release-352954174",
-   "https://developers.openai.com/codex/changelog/#github-release-352930553",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-09-app",
-   "https://developers.openai.com/codex/changelog/#github-release-351819708",
-   "https://developers.openai.com/codex/changelog/#github-release-351657410",
-   "https://developers.openai.com/codex/changelog/#github-release-350650561",
    "https://developers.openai.com/codex/changelog/#codex-2026-07-06-mobile",
    "https://developers.openai.com/codex/changelog/#codex-2026-06-25",
    "https://developers.openai.com/codex/changelog/#codex-2026-06-22-mobile",
@@ -4331,6 +4330,7 @@
    "https://developers.openai.com/codex/changelog/#codex-2025-05-19"
   ],
   "Perplexity": [
+   "dc3a25985a192a6c",
    "97b83aa9baec9a9e",
    "263862235a403619",
    "c064c1d18833ca7e",
