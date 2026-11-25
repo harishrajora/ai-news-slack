@@ -1,14 +1,14 @@
 {
  "last_post": {
   "Anthropic": 1795193684.459792,
-  "Claude Blog": 1795473235.608298,
+  "Claude Blog": 1795645497.41667,
   "Claude Code": 1795574693.927876,
   "Claude Platform": 1795473235.608298,
   "Cohere Blog": 1795501253.408728,
   "Gemini": 1795610242.266555,
   "Google AI": 1795543970.474686,
   "Google DeepMind": 1795501253.408728,
-  "Hacker News": 1795430346.794792,
+  "Hacker News": 1795645497.41667,
   "Hugging Face": 1795574693.927876,
   "OpenAI": 1795610242.266555,
   "OpenAI Codex": 1795543970.474686,
@@ -244,6 +244,16 @@
    "title": "connected intelligence for inhouse legal",
    "ts": 1795610242.266555,
    "url": "openai.com/business/learn/connected-intelligence-for-in-house-legal"
+  },
+  {
+   "title": "nvidia reinstates jensen huang as ceo",
+   "ts": 1795645497.41667,
+   "url": "cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+  },
+  {
+   "title": "kpmgs todd lohr on ai when your data is also your clients data",
+   "ts": 1795645497.41667,
+   "url": "claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
   }
  ],
  "seen": {
@@ -540,6 +550,7 @@
    "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems"
   ],
   "Claude Blog": [
+   "https://claude.com/blog/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data",
    "https://claude.com/blog/zero-data-retention-with-enterprise-frontier-safeguards",
    "https://claude.dev/blog/chaos-loop-claude-docs-launch/",
    "https://claude.com/blog/linked-billing-on-claude-platform",
@@ -1697,8 +1708,7 @@
    "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/"
   ],
   "Hacker News": [
-   "50601525",
-   "50599762"
+   "50611576"
   ],
   "Hugging Face": [
    "https://huggingface.co/blog/agentic-evals",
@@ -4363,12 +4373,12 @@
    "https://developers.openai.com/codex/changelog/#codex-2025-05-19"
   ],
   "Perplexity": [
+   "12a69c999babb53e",
    "34a47e92a3872c35",
    "dc3a25985a192a6c",
    "97b83aa9baec9a9e",
    "263862235a403619",
-   "c064c1d18833ca7e",
-   "8f678931d2ea86a3"
+   "c064c1d18833ca7e"
   ]
  }
 }
