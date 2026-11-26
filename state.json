@@ -6,8 +6,8 @@
   "Claude Platform": 1795473235.608298,
   "Cohere Blog": 1795501253.408728,
   "Gemini": 1795610242.266555,
-  "Google AI": 1795543970.474686,
-  "Google DeepMind": 1795501253.408728,
+  "Google AI": 1795666768.667226,
+  "Google DeepMind": 1795666768.667226,
   "Hacker News": 1795645497.41667,
   "Hugging Face": 1795574693.927876,
   "OpenAI": 1795610242.266555,
@@ -254,6 +254,16 @@
    "title": "kpmgs todd lohr on ai when your data is also your clients data",
    "ts": 1795645497.41667,
    "url": "claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
+  },
+  {
+   "title": "from spectrum to structure identifying molecules with mass spec skills for google antigravity",
+   "ts": 1795666768.667226,
+   "url": "deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity"
+  },
+  {
+   "title": "how gemini is changing the game for golden states organization and fans",
+   "ts": 1795666768.667226,
+   "url": "blog.google/products-and-platforms/products/gemini/gemini-golden-state"
   }
  ],
  "seen": {
@@ -550,8 +560,10 @@
    "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems"
   ],
   "Claude Blog": [
-   "https://claude.com/blog/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data",
    "https://claude.com/blog/zero-data-retention-with-enterprise-frontier-safeguards",
+   "https://claude.com/blog/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data",
+   "https://claude.com/blog/introducing-claude-ship",
+   "https://claude.com/blog/enterprise-guide-to-securing-coding-agents",
    "https://claude.dev/blog/chaos-loop-claude-docs-launch/",
    "https://claude.com/blog/linked-billing-on-claude-platform",
    "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
@@ -890,7 +902,12 @@
    "tag:github.com,2008:Repository/937253475/v2.1.322"
   ],
   "Claude Platform": [
+   "https://platform.claude.com/docs/en/release-notes/overview#analytics-api-web-search-counts",
+   "https://platform.claude.com/docs/en/release-notes/overview#analytics-api-connector-sign-in-counts",
+   "https://platform.claude.com/docs/en/release-notes/overview#analytics-api-project-message-counts",
    "https://platform.claude.com/docs/en/release-notes/overview#claude-opus-4-5-deprecation",
+   "https://platform.claude.com/docs/en/release-notes/overview#enterprise-frontier-safeguards",
+   "https://platform.claude.com/docs/en/release-notes/overview#storage-webhook-events",
    "https://platform.claude.com/docs/en/release-notes/overview#analytics-api-chat-session-counting",
    "https://platform.claude.com/docs/en/release-notes/overview#linked-billing",
    "https://platform.claude.com/docs/en/release-notes/overview#text-watermark-claude-opus-4-6-and-4-5-models",
@@ -1585,6 +1602,7 @@
    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/"
   ],
   "Google AI": [
+   "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
    "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
    "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
    "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
@@ -1606,6 +1624,7 @@
    "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
   ],
   "Google DeepMind": [
+   "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
    "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
    "https://deepmind.google/blog/introducing-gemini-4-neon/",
    "https://deepmind.google/blog/genie-4-is-now-available/",
@@ -1704,8 +1723,7 @@
    "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
    "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
    "https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control/",
-   "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
-   "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/"
+   "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/"
   ],
   "Hacker News": [
    "50611576"
@@ -4159,6 +4177,7 @@
    "https://openai.com/index/introducing-openai"
   ],
   "OpenAI Codex": [
+   "https://developers.openai.com/codex/changelog/#github-release-456141969",
    "https://developers.openai.com/codex/changelog/#codex-2026-11-23-app",
    "https://developers.openai.com/codex/changelog/#github-release-452122665",
    "https://developers.openai.com/codex/changelog/#codex-2026-11-19-app",
@@ -4373,8 +4392,9 @@
    "https://developers.openai.com/codex/changelog/#codex-2025-05-19"
   ],
   "Perplexity": [
-   "12a69c999babb53e",
+   "03e251f2becb9fd8",
    "34a47e92a3872c35",
+   "12a69c999babb53e",
    "dc3a25985a192a6c",
    "97b83aa9baec9a9e",
    "263862235a403619",
