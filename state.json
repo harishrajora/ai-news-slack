@@ -8,23 +8,13 @@
   "Gemini": 1795703105.706529,
   "Google AI": 1795666768.667226,
   "Google DeepMind": 1795666768.667226,
-  "Hacker News": 1795851230.145813,
-  "Hugging Face": 1795851230.145813,
+  "Hacker News": 1795882945.409419,
+  "Hugging Face": 1795882945.409419,
   "OpenAI": 1795756699.781498,
   "OpenAI Codex": 1795543970.474686,
   "Perplexity": 1795793416.216858
  },
  "recent": [
-  {
-   "title": "welcome inkling 2 mini cuttingedge performance for your local setup",
-   "ts": 1795264199.27824,
-   "url": "huggingface.co/blog/inkling2mini"
-  },
-  {
-   "title": "explore the codex security plugin",
-   "ts": 1795264199.27824,
-   "url": "openai.com/business/learn/codex-security-plugin-demo"
-  },
   {
    "title": "gemini 4 neon is the new 1 on the models engineering index",
    "ts": 1795290236.579797,
@@ -214,6 +204,16 @@
    "title": "gpt 62 astra solves a historical mystery",
    "ts": 1795851230.145813,
    "url": "generativehistory.substack.com/p/gpt-62-astra-solves-a-historical"
+  },
+  {
+   "title": "building on nemotron 35 parse open data finetuning and faster inference",
+   "ts": 1795882945.409419,
+   "url": "huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+  },
+  {
+   "title": "much shorter version of grh lean verification from anthropic",
+   "ts": 1795882945.409419,
+   "url": "github.com/lsernau/grh-lean"
   }
  ],
  "seen": {
@@ -1682,9 +1682,10 @@
    "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/"
   ],
   "Hacker News": [
-   "50643158"
+   "50648050"
   ],
   "Hugging Face": [
+   "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
    "https://huggingface.co/blog/training-swarms",
    "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
    "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
@@ -4349,6 +4350,7 @@
    "https://developers.openai.com/codex/changelog/#codex-2025-05-19"
   ],
   "Perplexity": [
+   "9b9ef3347c347aaa",
    "30dc8b0070b0a029",
    "34a47e92a3872c35",
    "12a69c999babb53e",
